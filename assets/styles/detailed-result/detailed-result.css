@@ -10,7 +10,9 @@ html {
 .detailed-result {
     display: flex;
     flex-direction: column;
-    background: url('/assets/images/results/orange-right.png') no-repeat top right;
+    justify-content: space-between;
+
+    background: url('/assets/images/results/orange-right.png') no-repeat top right / contain;
     width: 100%;
     height: 100%;
 }

@@ -1,7 +1,7 @@
 .result__circle {
     display: flex;
-    margin-top: 2.6rem;
     margin-left: 2.1rem;
+    margin-bottom: 1rem;;
 }
 
 .circle__red, .circle__gray {

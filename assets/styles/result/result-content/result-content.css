@@ -1,12 +1,12 @@
 .result__content {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     
     width: 90%;
     height: 60%;
-    margin: 0 8%;
+    margin: 0 8% 15%;
 
     font-weight: 400;
     font-size: calc(1rem + 2vw);
