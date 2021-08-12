@@ -1,7 +1,4 @@
-var objRecuperado = JSON.parse(localStorage.getItem('dadosFornecidos'));
-console.log(objRecuperado);
-
-// let $ = document.querySelector.bind(document);
+var objRecuperado = JSON.parse(sessionStorage.getItem('dadosFornecidos'));
 
 // ------- CONVERSÃO OBJ PARA VARIÁVEIS -------
 var dataInicio = new Date(objRecuperado.data_inicio.split('-'));
@@ -485,14 +482,13 @@ switch (motivoTermino) {
 var objTotal = createObject('Total', ' - ', 'R$ ' + totalProventos.toFixed(2) , '- R$ ' + totalDescontos.toFixed(2));
 rescisaoDetalhada.push(objTotal);
 
-
 // ------- EXIBIR RESULTADO -------
-let exibirTotal = document.querySelector('#valor span');
+var exibirTotal = document.getElementById('valor');
 exibirTotal.innerHTML = Math.round(totalRescisao * 100) / 100;
 
 // ------- SOLICITAR DETALHAMENTO DO RESULTADO -------
-var btnVerMaisDetalhes = document.querySelector("#detalhar");
+var btnVerMaisDetalhes = document.querySelector('#detalhar');
 btnVerMaisDetalhes.addEventListener("click", function(){
 
-    localStorage.setItem('rescisaoDetalhada', JSON.stringify(rescisaoDetalhada));
+    sessionStorage.setItem('rescisaoDetalhada', JSON.stringify(rescisaoDetalhada));
 });

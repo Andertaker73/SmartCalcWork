@@ -1,4 +1,4 @@
-var rescisaoDetalhada = JSON.parse(localStorage.getItem('rescisaoDetalhada'));
+var rescisaoDetalhada = JSON.parse(sessionStorage.getItem('rescisaoDetalhada'));
 
 for (const i in rescisaoDetalhada) {
     adicionaRegistroNaTabela(rescisaoDetalhada[i]);

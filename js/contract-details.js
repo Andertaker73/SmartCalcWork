@@ -1,8 +1,9 @@
-// localStorage.clear();
+// sessionStorage.clear();
 
 var form = document.querySelector('#form');
 
-form.addEventListener('submit', function() {
+form.addEventListener('submit', function(event) {
+    // event.preventDefault();
 
     var dadosFornecidos = {
         data_inicio: form.data_inicio.value,
@@ -14,5 +15,5 @@ form.addEventListener('submit', function() {
         aviso_previo: form.aviso_previo.value
     }    
 
-    localStorage.setItem('dadosFornecidos', JSON.stringify(dadosFornecidos));
+    sessionStorage.setItem('dadosFornecidos', JSON.stringify(dadosFornecidos));
 });
