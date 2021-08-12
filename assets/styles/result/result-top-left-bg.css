@@ -1,0 +1,6 @@
+.result__top-left-bg {
+    display: flex;
+    background: url('/assets/images/results/purple-top-left.png') no-repeat left top / contain;
+    width: 80%;
+    height: 30%;
+}

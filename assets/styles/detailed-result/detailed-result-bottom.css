@@ -1,0 +1,12 @@
+.detailed-result__circle {
+    display: flex;
+    margin-bottom: 1.3rem;
+    margin-left: 2.1rem;
+}
+
+.circle__red, .circle__gray {
+    margin-right: 1.4rem;
+}
+
+
+ 

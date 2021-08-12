@@ -1,0 +1,46 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('/assets/images/contract-details/bg-mobile.png') no-repeat top / cover;
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+@media(min-width:601px) {
+    .main {
+        align-items: center;
+    
+        background: url('/assets/images/home/orange-bot-right.svg') no-repeat right bottom, #6A16E1;
+
+        background-size: 60%, 40%;
+        width: 62%;
+    }
+}
+
+@media(min-width:761px) {
+    .main {
+        width: 57%;
+    }
+}
+
+@media(min-width:901px) {
+    .main {
+        width: 52%;
+    }
+}
+
+@media(min-width:1081px) {
+    .main {
+        width: 47%;
+    }
+}
+
+@media(min-width:1201px) {
+    .main {
+        width: 42%;
+    }
+}
+

@@ -1,0 +1,12 @@
+.contract__header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: calc(1.4rem + 1.2vw);
+}
+
+@media(min-width:1600px) {
+    .contract__header {
+        font-size: calc(2.4rem + 1.4vh);
+    }
+}

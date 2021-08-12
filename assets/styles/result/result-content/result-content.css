@@ -1,0 +1,19 @@
+.result__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 90%;
+    height: 60%;
+    margin: 0 8%;
+
+    font-weight: 400;
+    font-size: calc(1rem + 2vw);
+}
+
+@media(min-width:1000px) {
+    .result__content {
+        width: 60%;
+    }
+}

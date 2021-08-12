@@ -1,0 +1,17 @@
+.main__circle {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 3.4em;
+}
+.circle__red, .circle__gray {
+    margin-left: 1.5rem;
+
+}
+
+@media(max-width:600px){
+    .main__circle {
+        display: none;
+    }
+    
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resultado</title>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="/assets/styles/utils/reset.css" type="text/css">
+        <link rel="stylesheet" href="/assets/styles/utils/normalize.css" type="text/css">
+        <link rel="stylesheet" href="/assets/styles/utils/fonts.css" type="text/css">
+        <link rel="stylesheet" href="/assets/styles/utils/global.css" type="text/css">
+
+        <link rel="stylesheet" href="/assets/styles/result/result.css" type="text/css">
+        <link rel="stylesheet" href="/assets/styles/result/result-title.css" type="text/css">
+        <link rel="stylesheet" href="/assets/styles/result/result-top-left-bg.css" type="text/css">
+        <link rel="stylesheet" href="/assets/styles/result/result-img.css" type="text/css">
+        <link rel="stylesheet" href="/assets/styles/result/result-bottom.css" type="text/css">
+        <link rel="stylesheet" href="/assets/styles/result/result-content/result-content.css" type="text/css">
+        <link rel="stylesheet" href="/assets/styles/result/result-content/result-description.css" type="text/css">
+        <link rel="stylesheet" href="/assets/styles/result/result-content/result-value.css" type="text/css">
+        <link rel="stylesheet" href="/assets/styles/result/result-content/result-button.css" type="text/css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <main class="result">
+            <header class="result__top-left-bg">
+                <h2 class="result__title">Resultado</h2>
+            </header>
+            <div class="result__content">
+                <div id="anuncio" class="result__description">
+                    <p>O valor líquido da sua rescisão é de:</p>
+                </div>
+                    <h2 id="valor "class="result__value">R$ <span></span></h2>
+                <a id="detalhar" class="result__button" href="/detailed-results.html">Ver mais detalhes</a>
+                <div class="result__img"></div>
+            </div>
+            <div class="result__circle">
+                <div class="circle__gray"></div>
+                <div class="circle__gray"></div>
+                <div class="circle__red"></div>
+            </div>
+        </main>
+        <script src="/js/result.js"></script>
+        <script src="/js/Tabela_IRRF.js"></script>
+        <script src="/js/Tabela_INSS.js"></script>
+    </body>
+</html>

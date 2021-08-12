@@ -1,0 +1,34 @@
+html {
+    min-width: 320px;
+    max-width: 2565px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #4A00E0;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    background: url('/assets/images/results/orange-right.png') no-repeat top right;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+

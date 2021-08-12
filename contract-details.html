@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Rescisão do Contrato de Trabalho</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/styles/utils/reset.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/utils/normalize.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/utils/fonts.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/utils/global.css" type="text/css">
+
+    <link rel="stylesheet" href="/assets/styles/contract-details/contract-details.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/contract-details/contract-details-img.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/contract-details/contract-header.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/contract-details/contract-bottom.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/contract-details/contract-details-form/contract-details-form.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/contract-details/contract-details-form/form-buttons.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/contract-details/contract-details-form/form-labels.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/contract-details/contract-details-form/form-radio.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/contract-details/contract-details-form/form-inputs.css" type="text/css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main class="contract">
+        <header class="contract__header">
+            <h2>Cálculo de Rescisão do Contrato de Trabalho</h2>
+        </header>
+        <div class="contract__content">
+            <form id="form" class="contract__form">
+                <div>
+                    <label for="data_inicio" class="labels">Data início:</label>
+                    <input type="date" id="data_inicio" class="input" name="data_inicio" required autofocus>
+                </div>
+                <div>
+                    <label for="data_termino" class="labels">Data término:</label>
+                    <input type="date" id="data_termino" class="input" name="data_termino" required>
+                </div>
+                <div>                    
+                    <label for="ultimo_salario" class="labels">Último salário:</label>
+                    <input type="number" id="ultimo_salario" class="input" placeholder="ex: 2000.00" name="ultimo_salario" min="1" required>
+                </div>
+                <div>                    
+                    <label for="numero_dependentes" class="labels">Número de dependentes:</label>
+                    <input type="number" id="numero_dependentes" class="input" name="numero_dependentes" min="0" required>
+                </div>
+                <div>                   
+                    <label for="motivo_termino" class="labels">Motivo do término de contrato:</label>
+                    <select id="motivo_termino" class="input" name="motivo_termino">
+                        <option value="pedido_de_demissao">Pedido de demissão</option>
+                        <option value="dispensa_com_justa_causa">Dispensa com justa causa</option>
+                        <option value="dispensa_sem_justa_causa">Dispensa sem justa causa</option>
+                        <option value="rescisão_indireta">Rescisão indireta</option>
+                        <option value="rescisão_culpa_recíproca">Rescisão por culpa recíproca</option>
+                    </select>
+                </div>
+                <div class="radio">                   
+                    <label id="ferias_vencidas" class="labels__radio">Possui férias vencidas?</label>
+                    <input type="radio" id="fv_nao" value="false" name="ferias_vencidas" required>
+                    <label for="fv_nao">NÃO</label>
+                    <input type="radio" id="fv_sim" value="true" name="ferias_vencidas">
+                    <label for="fv_sim">SIM</label>
+                </div>
+                <div class="radio">                
+                    <label id="aviso_previo" class="labels__radio">Cumpriu o aviso prévio?</label>
+                    <input type="radio" id="ap_nao" value="false" name="aviso_previo" required>
+                    <label for="ap_nao">NÃO</label>
+                    <input type="radio" id="ap_sim" value="true" name="aviso_previo">
+                    <label for="ap_sim">SIM</label>
+                </div>
+                <div>
+                    <button id="btnCalcular" class="contract__button" type="submit">Calcular</button> 
+                </div>
+            </form>
+            <div class="contract__img"></div>
+        </div>
+        <div class="contract__circle">
+            <div class="circle__gray"></div>
+            <div class="circle__red"></div>
+            <div class="circle__gray"></div>
+        </div>
+    </main>
+    <script src="/js/contract-details.js"></script>
+</body>
+</html>

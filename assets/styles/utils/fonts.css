@@ -1,0 +1,24 @@
+@font-face{
+    font-family: 'sansation_light';
+    src: url('/assets/fonts/Sansation-Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'sansation_italic';
+    src: url('/assets/fonts/Sansation-Italic-webfont.woff') format('woff');
+    font-weight: normal;
+    /* font-style: normal; */
+}
+
+.main__title 
+{
+    font-family: 'sansation_light', sans-serif;
+}
+
+#start_now,
+.main__bottom
+{
+    font-family: 'sansation_italic', sans-serif;
+}

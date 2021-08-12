@@ -1,0 +1,14 @@
+.main__init {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1.3rem;
+    margin-left: 4rem;
+}
+
+@media(max-width:600px) {
+    .main__init {
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 0;
+    }
+}

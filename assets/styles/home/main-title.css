@@ -1,0 +1,13 @@
+.main__title {
+    display: flex;
+    justify-content: center;
+
+    font-family: 'sansation_light', sans-serif;
+    font-weight: 300;
+    font-size: clamp(1.4rem, 4rem + 2vw, 8rem);
+
+    color: #F0E9E9;
+    
+    margin-top: 7rem;
+    max-width: 44.6rem;
+}

@@ -1,0 +1,6 @@
+.result__value {
+    font-weight: 700;
+    text-align: center;
+    font-size: calc(2rem + 2vw);
+}
+

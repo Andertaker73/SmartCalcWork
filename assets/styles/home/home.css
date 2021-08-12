@@ -1,0 +1,17 @@
+html {
+    min-width: 320px;
+    max-width: 2565px;
+}
+.home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-size: 32rem;
+
+}
+@media (min-width: 601px) {
+    .home {
+        flex-direction: row;
+    }
+}
+

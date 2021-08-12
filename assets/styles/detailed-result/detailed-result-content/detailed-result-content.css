@@ -1,0 +1,21 @@
+.detailed-result__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-weight: 700;
+    padding: 0 0 2rem 0;
+}
+
+
+@media screen and (max-width: 600px){
+    .detailed-result__content {
+        width: 98%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 2%;
+        color: #000000;
+    }
+}

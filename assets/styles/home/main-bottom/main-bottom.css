@@ -1,0 +1,14 @@
+.main__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 35%;
+}
+
+@media(max-width:600px){
+    .main__bottom {
+        background: none;
+        justify-content: center;
+    }  
+}

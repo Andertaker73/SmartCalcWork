@@ -1,0 +1,24 @@
+.input {
+    flex-shrink: 0;
+    font-size: calc(.6rem + 1.1vh);
+
+    background: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+
+    width: 50%;
+    height: 4rem;
+    margin: 1rem auto;
+}
+
+@media(min-width:500px) {
+    .input {
+        font-size: calc(.8rem + 1.4vh);
+    }
+}
+
+@media(min-width:1600px) {
+    .input {
+        font-size: calc(1.2rem + 1.4vh);
+    }
+}

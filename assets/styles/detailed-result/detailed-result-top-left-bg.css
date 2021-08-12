@@ -1,0 +1,16 @@
+.detailed-result__top-left-bg {
+    display: flex;
+    background: url('/assets/images/results/purple-top-left.png') no-repeat left top / contain;
+    width: 80%;
+    height: 30%;
+}
+
+@media screen and (max-width: 600px){
+    .detailed-result__top-left-bg {
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        background: #FFFFFF;
+    }
+}
+

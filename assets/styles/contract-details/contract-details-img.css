@@ -1,0 +1,18 @@
+@media(min-width:1020px) {
+    .contract__img {
+        display: flex;
+        align-self: flex-start;
+        justify-content: center;
+        margin: auto 2rem auto 0;
+        background: url('/assets/images/contract-details/Calculator_Isometric.svg') no-repeat 20% / contain ;
+        width: 28%;
+        height: 100%;
+        margin-left: 3%;
+    }
+}
+
+@media(min-width:1600px) {
+    .contract__img {
+       margin-left: 3%;
+    }
+}

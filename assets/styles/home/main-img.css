@@ -1,0 +1,39 @@
+.main__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('/assets/images/home/home-waiting.svg') no-repeat center;
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:470px) {
+    .main__img {
+        max-width: 60%;
+    }
+}
+
+@media(min-width:670px) {
+    .main__img {
+        max-width: 60%;
+    }
+}
+
+@media(min-width:760px) {
+    .main__img {
+        max-width: 90%;
+    }
+}
+
+@media(min-width:1080px) {
+    .main__img {
+        max-width: 70%;
+    }
+}
+
+@media(min-width:1200px) {
+    .main__img {
+        max-width: 70%;
+    }
+}
+

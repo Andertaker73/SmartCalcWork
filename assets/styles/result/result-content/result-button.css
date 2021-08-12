@@ -1,0 +1,31 @@
+.result__button {
+    display: flex;
+    justify-content: center;
+    
+    background: #F12711;
+    color: #FFFFFF;
+    font-weight: 700;
+    /* font-size: 2.4rem; */
+    font-size: calc(.8rem + 1.4vh);
+
+    /* width: 40%; */
+    padding: 1rem 5.4rem;
+
+    
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 .4rem .4rem rgba(0, 0, 0, 0.25), 
+                0 .4rem .4rem rgba(0, 0, 0, 0.25);
+    
+    transition: filter .5s;
+}
+
+.result__button:hover {
+    transform: scale(1.1);
+}
+
+@media(min-width: 1000px) {
+    .result__button {
+        font-size: calc(1.4rem + 1.4vh);
+    }
+}

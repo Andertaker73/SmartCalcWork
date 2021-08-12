@@ -1,0 +1,18 @@
+.labels {
+    display: inline-block;
+    width: 40%;
+    margin: auto 0;
+    margin-left: 2%;
+}
+
+.labels__radio {
+    display: inline-block;
+    width: 50%;
+}
+
+@media(min-width:1600px) {
+    .labels,
+    .labels__radio {
+        font-size: calc(2rem);
+    }
+}
